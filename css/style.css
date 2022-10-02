@@ -15,6 +15,7 @@ td { margin: 0; padding: 0; border: 0; outline: 0; text-decoration: none; }
 --back-batt-color: #188CE8;
 --back-section-color: #F5F4FA;
 --border-header-color: #ECECEC;
+--icons-color:#AFB1B8;
 }
 
 
@@ -196,6 +197,10 @@ display: inline-block;
 
 /*Наші особливості*/
 
+.features-icons{
+
+}
+
 .features-head{
     display: flex;
     gap: 30px;
@@ -255,6 +260,31 @@ text-align: center;
 
 }
 /*Наша команда*/
+
+
+
+.icons-first-team{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 32px 30px;
+    flex-basis: calc((100%-30px) /4);
+
+}
+
+.link-icons-team{
+fill: var(--icons-color);
+width: 44px;
+height: 44px;
+border-radius: 50%;
+gap: 10px;
+background-color: #212121;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
 .staff{
 display: flex;
 gap: 30px;
@@ -296,6 +326,19 @@ border-radius: 0px 0px 4px 4px;
 }
 
 
+/*Постійні клієнти*/
+
+.clients-paragrapf{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list-client{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /*Підвал сторінки*/
 
@@ -333,5 +376,9 @@ font-style: normal;
 }
 .two-logo-letters{
 color:var(--sac-basic-color);
+}
+
+.footer-second{
+    display: flex;
 }
 
