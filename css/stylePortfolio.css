@@ -104,13 +104,17 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--subtitle-color);
+display: flex;
+align-items: center;
 }
 .mail{
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--subtitle-color)
+color: var(--subtitle-color);
+display: flex;
+align-items: center;
 }
 
 .logo-leters{
@@ -223,10 +227,16 @@ padding: 20px 24px;
 flex-basis: calc((100% - 60px) / 3);
 }
 
-.link-text:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
+
+.link-cards-port{
+    display: block;
 }
 
+.link-cards-port:hover,
+.link-cards-port:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
+
+}
 
 /*Підвал сторінки*/
 
