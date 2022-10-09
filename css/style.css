@@ -42,6 +42,8 @@ color: var(--another-color);
 a:focus{
 color: var(--another-color);
 }
+
+
 /*підкреслення*/
 .line{
 text-decoration: none;
@@ -68,6 +70,7 @@ letter-spacing: 0.03em;
 color: var(--another-color);
 text-decoration: none;
 }
+
 /*всі маркери*/
 .points{
 list-style: none;
@@ -88,10 +91,19 @@ padding-bottom: 94px;
 /*навігація шапки*/
 
 .navigation{
+display: inline-flex;
+align-items: center;
+justify-content: center;
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.navigation::after {
+    content: '';
+    width: 78px;
+    height: 4px;
+    background-color: #000000;
 }
 
 .mail-icons,
@@ -352,6 +364,10 @@ text-align: center;
 
 .icons-team-ic {
 fill: var(--icons-color);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .icons-team{
@@ -515,6 +531,7 @@ Line-height: 1.14;
 letter-spacing: 0.03em;
 color: var(--sac-basic-color);
 margin-bottom: 20px;
+text-transform: uppercase;
 }
 
 .footer-second{

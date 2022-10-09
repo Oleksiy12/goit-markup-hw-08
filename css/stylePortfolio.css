@@ -79,17 +79,13 @@ background-color: var(--sac-basic-color);
 /*навігація шапки*/
 
 
-.navigation::after {
-content: '';
-width: 78px;
-height: 4px;
-color: #212121;
-}
+
 .navigation{
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .mail-icons,
 .tel-icons
@@ -171,6 +167,13 @@ margin-right: 93px;
 
 
 /*Кнопки*/
+
+.everyone-button{
+transition-property: box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .button-hero{
 font-family: 'Roboto';
 font-style: normal;
@@ -352,6 +355,7 @@ Line-height: 1.14;
 letter-spacing: 0.03em;
 color: var(--sac-basic-color);
 margin-bottom: 20px;
+text-transform: uppercase;
 }
   
 .footer-second{
