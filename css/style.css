@@ -35,6 +35,7 @@ background: var(--another-color);
 button:focus{
 background: var(--another-color);
 }
+
 a:hover{
 color: var(--another-color);
 }
@@ -86,6 +87,12 @@ padding-bottom: 94px;
 
 /*навігація шапки*/
 
+.navigation{
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 
 .mail-icons,
 .tel-icons
@@ -117,6 +124,9 @@ letter-spacing: 0.02em;
 color: var(--subtitle-color);
 display: flex;
 align-items: center;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail{
 font-weight: 500;
@@ -126,6 +136,9 @@ letter-spacing: 0.02em;
 color: var(--subtitle-color);
 display: flex;
 align-items: center;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-leters{
@@ -208,7 +221,11 @@ min-width: 216px;
 height: 50px;
 text-align: center;
 display: inline-block;
+position: relative;
+
+
 }
+
 
 /*Наші особливості*/
 
@@ -269,6 +286,40 @@ margin: -1px;
 
 /*Чим ми займаємося*/
 
+
+.thumb{
+position: relative;
+display: flex;
+justify-content: center;
+margin: 0 auto;
+}
+
+.paragraph-work{
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--sac-basic-color);
+    padding-top:27px;
+    padding-bottom: 27px;
+    margin: 0;
+}
+
+
+.thumb > .paragraph-work{
+    position: absolute;
+    top: 224px;
+    bottom: 0;
+    right: auto;
+    left: auto;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+}
+
+
 .work-sect{
     padding-bottom: 94px;
 }
@@ -311,6 +362,9 @@ gap: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-team:hover,
@@ -372,6 +426,9 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -387,6 +444,9 @@ border-radius: 0px 0px 4px 4px;
 
 .icons-clients{
     fill: var(--icons-color);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients:hover,
@@ -398,9 +458,6 @@ border-radius: 0px 0px 4px 4px;
 .link-clients:focus .icons-clients{
     fill: var(--another-color);
 }
-
-
-
 
 
 
@@ -429,6 +486,9 @@ letter-spacing: 0.03em;
 color: var(--uknown-color);
 text-decoration: none;
 font-style: normal;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .map{
 font-weight: 400;
@@ -438,6 +498,9 @@ letter-spacing: 0.03em;
 color: var(--sac-basic-color);
 text-decoration: none;
 font-style: normal;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .two-logo-letters{
 color:var(--sac-basic-color);
@@ -481,6 +544,9 @@ margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-footer:hover,
 .icons-footer:focus{
@@ -493,3 +559,43 @@ margin-bottom: 20px;
     fill: var(--sac-basic-color);
 }
 
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+    
+.modal{
+    width: 528px;
+    height: 581px;
+    background-color: var(--sac-basic-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--sac-basic-color);
+    padding: 0;
+    
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
