@@ -90,21 +90,26 @@ padding-bottom: 94px;
 
 /*навігація шапки*/
 
+
 .navigation{
-display: inline-flex;
-align-items: center;
-justify-content: center;
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.navigation::after {
+
+
+  .navigation-list > a::after {
+    display: flex;
+    align-items: center;
     content: '';
-    width: 78px;
+    width: auto;
     height: 4px;
-    background-color: #000000;
+    background-color: black;
+    border-radius: 2px;
+    margin: 0;
 }
+
 
 .mail-icons,
 .tel-icons
@@ -234,6 +239,9 @@ height: 50px;
 text-align: center;
 display: inline-block;
 position: relative;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -575,6 +583,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .icons-footer-ic{
     fill: var(--sac-basic-color);
 }
+
+
+/*Backdrop*/
 
 
 .backdrop{
