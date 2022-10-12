@@ -91,25 +91,26 @@ padding-bottom: 94px;
 /*навігація шапки*/
 
 
+.navigation-list{
+    position: relative;
+}
+
 .navigation{
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-
-  .navigation-list > a::after {
-    display: flex;
-    align-items: center;
-    content: '';
-    width: auto;
-    height: 4px;
-    background-color: black;
-    border-radius: 2px;
-    margin: 0;
+.navigation::after {
+     position: absolute;
+     display: flex;
+     align-items: center;
+     content: '';
+     width: auto;
+     height: 4px;
+     background-color: #188CE8;
 }
-
+ 
 
 .mail-icons,
 .tel-icons
@@ -131,6 +132,7 @@ letter-spacing: 0.02em;
 color: var(--basic-color);
 display: flex;
 align-items: center;
+position: relative;
 }
 
 .tel {
@@ -594,6 +596,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
     
 .modal{
@@ -604,13 +610,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 .modal-button{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #000000;
+    border: 1px solid var(--sac-basic-color);
     position: absolute;
     top: 8px;
     right: 8px;
@@ -621,9 +628,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--sac-basic-color);
     padding: 0;
     
+    
 }
 .is-hidden{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.modal-button:hover,
+.modal-button:focus{
+    background-color: var(--sac-basic-color);
+    fill: var(--another-color);
+
 }
