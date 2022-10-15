@@ -23,7 +23,7 @@ td { margin: 0; padding: 0; border: 0; outline: 0; text-decoration: none; }
 body{
 color: var(--basic-color);
 font-family: 'Roboto', sans-serif;
-background-color: var(--sac-basic-color);
+/*background-color: var(--sac-basic-color);*/
 }
 
 
@@ -36,13 +36,13 @@ button:focus{
 background: var(--another-color);
 }
 
-a:hover{
+/*a:hover{
 color: var(--another-color);
 }
 a:focus{
 color: var(--another-color);
 }
-
+*/
 
 /*підкреслення*/
 .line{
@@ -53,6 +53,10 @@ line-height: 1.14px;
 letter-spacing: 0.02em;
 }
 
+.line:hover,
+.line:focus{
+    color: var(--another-color);
+}
 /*Курсор*/
 .cursor{
 cursor: pointer;
@@ -91,26 +95,26 @@ padding-bottom: 94px;
 /*навігація шапки*/
 
 
-.navigation-list{
-    position: relative;
-}
-
 .navigation{
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+position: relative;
+
 }
 
 .navigation::after {
-     position: absolute;
-     display: flex;
-     align-items: center;
-     content: '';
-     width: auto;
-     height: 4px;
-     background-color: #188CE8;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    height: 4px;
+    border-radius: 2px;
+    content: '';
+    background-color: var(--sac-basic-color);
+    
 }
- 
 
 .mail-icons,
 .tel-icons
