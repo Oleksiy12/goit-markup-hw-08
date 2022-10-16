@@ -80,10 +80,24 @@ background-color: var(--sac-basic-color);
 
 
 
+.current::after {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    height: 4px;
+    border-radius: 2px;
+    content: '';
+    background: var(--another-color);
+    
+}
+
 .navigation{
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+position: relative;
 }
 
 

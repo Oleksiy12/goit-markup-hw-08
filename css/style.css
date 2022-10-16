@@ -103,7 +103,7 @@ position: relative;
 
 }
 
-.navigation::after {
+.current::after {
     width: 100%;
     display: block;
     position: absolute;
@@ -112,9 +112,10 @@ position: relative;
     height: 4px;
     border-radius: 2px;
     content: '';
-    background-color: var(--sac-basic-color);
+    background: var(--another-color);
     
 }
+
 
 .mail-icons,
 .tel-icons
