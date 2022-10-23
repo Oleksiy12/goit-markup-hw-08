@@ -36,13 +36,6 @@ button:focus{
 background: var(--another-color);
 }
 
-/*a:hover{
-color: var(--another-color);
-}
-a:focus{
-color: var(--another-color);
-}
-*/
 
 /*підкреслення*/
 .line{
@@ -494,6 +487,23 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 /*Підвал сторінки*/
+.maling-list{
+    display: block;
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+}
+
+.paragrapf-maling{
+font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--sac-basic-color);
+}
 
 .foot-list{
 margin-bottom: 9px;
