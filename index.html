@@ -251,14 +251,27 @@
     <form>
       <div class="block-modal">
 <label class="modal-label">Залиште свої дані, ми вам передзвонимо</label>
-<label class="text-modal">
+<label class="data-column">
   Ім'я
-<input type="text" name="username" required/>
+<input class="data-input" type="text" name="username" required/>
 </label>
-<label>
+<label class="data-column">
   Телефон
-  <input type=""
+  <input class="data-input" type="tel" name="phone_number"/>
 </label>
+<label class="data-column">
+  Пошта
+  <input class="data-input" type="email" name="email"/>
+</label>
+<label class="data-column">
+  Коментар
+  <textarea class="coment-modal" name="coment" placeholder="Введіть текст" ></textarea>
+</label>
+<label class="checkbox">
+  <input class="input-check" type="checkbox"/>
+  Погоджуюся з розсилкою та приймаю<a class="link-checkbox" href="#">  Умови договору</a>
+</label>
+<button type="submit" class="but-end">Відправити</button>
 </div>
     </form>
     <button type="button" class="modal-button" data-modal-close><svg class="btn-modal" width="18" height="18">
