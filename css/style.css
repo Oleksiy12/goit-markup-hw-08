@@ -751,7 +751,6 @@ color:var(--subtitle-color);
 margin-bottom: 4px;
 position: relative;
 
-
   }
 
   .data-input{
@@ -760,12 +759,17 @@ position: relative;
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 margin-bottom: 10px;
-
+padding-left: 42px;
+cursor: pointer;
   }
+
+ 
 
 .icons-modal{
     position: absolute;
-    
+    left:12px;
+    top:50%;
+    transform: translateY(-50%);
 
 }
 
@@ -824,6 +828,8 @@ cursor: pointer;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 padding: 10px 52px;
+letter-spacing: 0.06em;
+
   }
 
 .btn-enter{
@@ -832,3 +838,4 @@ padding: 10px 52px;
     justify-content: center;
     margin-top: 30px;
 }
+
