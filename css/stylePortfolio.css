@@ -435,6 +435,7 @@ fill: var(--sac-basic-color);
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
+    outline: none;
     }
     
     .button-maling{
@@ -458,10 +459,8 @@ fill: var(--sac-basic-color);
     justify-content: space-around;
     }
     
-    
     .button-form{
-    display: flex;
-    
+        display: flex;
     }
     
     .maling-icons{
