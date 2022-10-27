@@ -414,6 +414,8 @@ background-color: var(--another-color);
 fill: var(--sac-basic-color);
 }
 
+/* РОЗСИЛКА*/
+
 .maling-footer {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -427,7 +429,6 @@ fill: var(--sac-basic-color);
     border-radius: 4px;
     width: 358px;
     height: 50px;
-    margin-top:20px;
     margin-right: 12px;
     padding-top: 15px;
     padding-left: 16px;
@@ -458,7 +459,7 @@ fill: var(--sac-basic-color);
     
     .button-form{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     
     }
     
@@ -482,4 +483,5 @@ fill: var(--sac-basic-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--sac-basic-color);
+    margin-bottom: 20px;
     }

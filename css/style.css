@@ -487,23 +487,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 /*Підвал сторінки*/
-.maling-list{
-    display: block;
-    width: 570px;
-    height: 86px;
-    margin-left: 93px;
-}
 
-.paragrapf-maling{
-font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--sac-basic-color);
-}
 
 .foot-list{
 margin-bottom: 9px;
@@ -602,6 +586,28 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+/* РОЗСИЛКА */
+
+.paragrapf-maling{
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--sac-basic-color);
+    margin-bottom: 20px;
+}
+
+
+.maling-list{
+    display: block;
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+}
+
 .maling-footer {
 font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -615,7 +621,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 width: 358px;
 height: 50px;
-margin-top:20px;
 margin-right: 12px;
 padding-top: 15px;
 padding-left: 16px;
@@ -808,7 +813,10 @@ color: var(--subtitle-color);
 display: flex;
 flex-direction: row;
 margin-top: 20px;
-align-items: baseline;
+margin-bottom: 0;
+justify-content: center;
+align-items: center;
+
 
   }
 
@@ -824,6 +832,7 @@ color: var(--another-color);
     width: 16px;
     height: 15px;
     margin-right: 7px;
+    align-items: center;
   }
 
   .but-end{
