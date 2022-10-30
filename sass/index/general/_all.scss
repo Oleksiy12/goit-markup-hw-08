@@ -1,0 +1,57 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, 
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, 
+td { margin: 0; padding: 0; border: 0; outline: 0; text-decoration: none; }
+
+body{
+color: var(--basic-color);
+font-family: 'Roboto', sans-serif;}
+
+button:hover{
+background: var(--another-color);
+}
+button:focus{
+background: var(--another-color);
+}
+
+.line{
+    text-decoration: none;
+    color: var(--basic-color);
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus{
+    color: var(--another-color);
+}
+    }
+
+.cursor{
+    cursor: pointer;
+    }
+
+.logo{
+    width: 145px;
+    height: 31px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--another-color);
+    text-decoration: none;
+    }
+.points{
+    list-style: none;
+    }
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    }
+    .section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
