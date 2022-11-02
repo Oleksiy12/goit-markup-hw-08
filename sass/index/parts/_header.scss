@@ -1,4 +1,4 @@
-.navigation{
+.nav{
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -28,12 +28,12 @@
         fill: currentColor;
     }
     
-    .head-web{
+    .header{
     padding-top: 24px;
     padding-bottom: 25px;
     border: 1px solid var(--border-header-colo);
     }
-    .nav-first{
+    .navigation{
     font-weight:500 ;
     font-size: 14px;
     line-height: 1.14;
@@ -74,11 +74,11 @@
     color: var(--basic-color);
     }
     
-    .header-box{
+    .header-container{
     display: flex;
     align-items: center;
     }
-    
+
     .navigation-mark{
     display: flex;
     gap: 50px;
