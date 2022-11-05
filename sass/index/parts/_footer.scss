@@ -24,6 +24,7 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
     }
     
     .map{
@@ -37,6 +38,7 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
     }
     
     .two-logo-letters{
@@ -66,6 +68,7 @@
         align-content: center;
         justify-content: space-around;
         gap: 10px;
+        list-style: none;
     }
     
     .footer-first-block{
@@ -160,4 +163,8 @@
     
     .maling-icons{
         fill: var(--sac-basic-color);
+    }
+
+    .basement{
+        list-style: none;
     }

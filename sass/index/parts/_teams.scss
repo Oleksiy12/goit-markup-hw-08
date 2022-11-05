@@ -3,6 +3,7 @@
     justify-content: space-around;
     padding: 16px 32px 30px;
     flex-basis: calc((100% - 30px) /4);
+    list-style: none;
 }
 
 .icons-team-ic {
@@ -36,6 +37,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .staff{
 display: flex;
 gap: 30px;
+list-style: none;
 }
 
 .title-second{

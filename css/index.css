@@ -45,10 +45,6 @@ button:focus {
   color: var(--another-color);
 }
 
-.cursor {
-  cursor: pointer;
-}
-
 .logo {
   width: 145px;
   height: 31px;
@@ -60,10 +56,6 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--another-color);
   text-decoration: none;
-}
-
-.points {
-  list-style: none;
 }
 
 .container {
@@ -130,6 +122,7 @@ button:focus {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
+  cursor: pointer;
   display: flex;
   align-items: center;
   transition-property: color;
@@ -143,6 +136,7 @@ button:focus {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
+  cursor: pointer;
   display: flex;
   align-items: center;
   transition-property: color;
@@ -154,12 +148,13 @@ button:focus {
   color: var(--basic-color);
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
 .navigation-mark {
+  list-style: none;
   display: flex;
   gap: 50px;
 }
@@ -170,9 +165,10 @@ button:focus {
   align-items: center;
   gap: 50px;
   margin-left: auto;
+  list-style: none;
 }
 
-.first-logo {
+.navigation__logo {
   margin-right: 93px;
 }
 
@@ -218,6 +214,7 @@ button:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
   color: var(--sac-basic-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -235,6 +232,7 @@ button:focus {
 .features-head {
   display: flex;
   gap: 30px;
+  list-style: none;
 }
 
 .features {
@@ -327,6 +325,7 @@ button:focus {
 .work {
   display: flex;
   gap: 30px;
+  list-style: none;
 }
 
 .icons-first-team {
@@ -334,6 +333,7 @@ button:focus {
   justify-content: space-around;
   padding: 16px 32px 30px;
   flex-basis: calc((100% - 30px) / 4);
+  list-style: none;
 }
 
 .icons-team-ic {
@@ -365,6 +365,7 @@ button:focus {
 .staff {
   display: flex;
   gap: 30px;
+  list-style: none;
 }
 
 .title-second {
@@ -424,6 +425,7 @@ button:focus {
 .list-client {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 .icons-clients {
@@ -462,6 +464,7 @@ button:focus {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .map {
@@ -475,6 +478,7 @@ button:focus {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .two-logo-letters {
@@ -504,6 +508,7 @@ button:focus {
   align-content: center;
   justify-content: space-around;
   gap: 10px;
+  list-style: none;
 }
 
 .footer-first-block {
@@ -597,6 +602,10 @@ button:focus {
 
 .maling-icons {
   fill: var(--sac-basic-color);
+}
+
+.basement {
+  list-style: none;
 }
 
 .backdrop {

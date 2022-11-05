@@ -126,6 +126,7 @@ a:focus {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
+  cursor: pointer;
   display: flex;
   align-items: center;
   transition-property: color;
@@ -139,6 +140,7 @@ a:focus {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
+  cursor: pointer;
   display: flex;
   align-items: center;
   transition-property: color;
@@ -158,6 +160,7 @@ a:focus {
 .navigation-mark {
   display: flex;
   gap: 50px;
+  list-style: none;
 }
 
 .contacts {
@@ -166,6 +169,7 @@ a:focus {
   align-items: center;
   gap: 50px;
   margin-left: auto;
+  list-style: none;
 }
 
 .first-logo {
@@ -280,6 +284,7 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  list-style: none;
 }
 
 .image-link {
@@ -332,6 +337,7 @@ button:focus {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .map {
@@ -345,6 +351,7 @@ button:focus {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .two-logo-letters {
@@ -375,6 +382,7 @@ button:focus {
   align-content: center;
   justify-content: space-around;
   gap: 10px;
+  list-style: none;
 }
 
 .footer-first-block {
@@ -468,4 +476,8 @@ button:focus {
   text-transform: uppercase;
   color: var(--sac-basic-color);
   margin-bottom: 20px;
+}
+
+.basement {
+  list-style: none;
 }/*# sourceMappingURL=portfolio.css.map */

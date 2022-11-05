@@ -50,6 +50,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
+    cursor: pointer;
     display: flex;
     align-items: center;
     transition-property: color;
@@ -63,6 +64,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
+    cursor: pointer;
     display: flex;
     align-items: center;
     transition-property: color;
@@ -74,12 +76,13 @@
     color: var(--basic-color);
     }
     
-    .header-container{
+    .header__container{
     display: flex;
     align-items: center;
     }
 
     .navigation-mark{
+    list-style: none;
     display: flex;
     gap: 50px;
     }
@@ -90,8 +93,9 @@
     align-items: center;
     gap: 50px;
     margin-left: auto;
+    list-style: none;
     }
     
-    .first-logo {
+    .navigation__logo {
     margin-right: 93px;
     }
