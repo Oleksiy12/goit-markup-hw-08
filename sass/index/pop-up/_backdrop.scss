@@ -5,8 +5,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition-property: all;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animation;
 }
     
 .modal{
@@ -29,14 +28,12 @@ border-radius: 4px;
     position: absolute;
     top: 8px;
     right: 8px;
-    display: flex;
-    align-items: center;
+    @extend %display;
     justify-content: center;
     cursor: pointer;
     background-color: var(--sac-basic-color);
     padding: 0;
-    transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animation;
 &:hover,
 &:focus{
     background-color: var(--sac-basic-color);

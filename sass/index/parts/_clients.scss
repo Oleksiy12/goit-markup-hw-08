@@ -3,12 +3,10 @@
     height: 92px;
     border: 1px solid var(--icons-color);
     border-radius: 5px;
-    display: flex;
-    align-items: center;
+    @extend %display;
     justify-content: center;
 transition-property: border-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animation;
 &:hover,
 &:focus{
     border-color: var(--another-color);
@@ -29,8 +27,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .icons-clients{
     fill: var(--icons-color);
 transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animation;
 .link-clients:hover &,
 .link-clients:focus &{
     fill: var(--another-color);

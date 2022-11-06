@@ -1,4 +1,4 @@
-.features-head{
+.features__container{
     display: flex;
     gap: 30px;
     list-style: none;
@@ -13,7 +13,7 @@ text-transform: uppercase;
 margin-bottom: 10px;
 }
 
-.paragraph-features{
+.features__paragraph{
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -21,13 +21,12 @@ letter-spacing: 0.03em;
 color: var(--subtitle-color);
 }
 
-.features-list{
+.features__list{
 width: calc((100% - 90px) / 4);
 }
 
-.features-block {
-    display: flex;
-    align-items: center;
+.features__block {
+    @extend %display;
     justify-content: center;
     width: 270px;
     height: 120px;

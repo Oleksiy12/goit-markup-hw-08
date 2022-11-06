@@ -15,8 +15,7 @@
 
 .navigation{
 transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animation;
 position: relative;
 }
 
@@ -52,8 +51,7 @@ cursor: pointer;
 display: flex;
 align-items: center;
 transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animation;
 
 }
 .mail{
@@ -66,8 +64,7 @@ cursor: pointer;
 display: flex;
 align-items: center;
 transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animation;
 }
 
 .logo-leters{

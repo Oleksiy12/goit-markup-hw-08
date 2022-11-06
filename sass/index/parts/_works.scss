@@ -1,11 +1,11 @@
-.thumb{
+.work__container{
     position: relative;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     }
     
-    .paragraph-work{
+    .work__paragraph{
         font-family: 'Roboto', sans-serif ;
         font-weight: 700;
         font-size: 14px;
@@ -16,7 +16,7 @@
         padding-top:27px;
         padding-bottom: 27px;
         margin: 0;
-        .thumb > &{
+        .work__container > &{
             position: absolute;
             top: 224px;
             bottom: 0;
@@ -28,18 +28,12 @@
         }
     }
 
-    .work-sect{
+    .work__section{
         padding-bottom: 94px;
     }
     
-    .title-second{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-    }
-    .work {
+
+    .work__block {
         display: flex;
         gap: 30px;
         list-style: none;
