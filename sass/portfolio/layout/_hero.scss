@@ -38,6 +38,7 @@
     letter-spacing: 0.06em;
     color: var(--basic-color); 
     margin-bottom: 4px;
+    background-color: var(--sac-basic-color);
     }
     .paragraph-hero{
     font-weight: 400;
@@ -45,7 +46,7 @@
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--subtitle-color);
-    
+    background-color: var(--sac-basic-color);
     }
     .hero-link{
     display: flex;

@@ -37,8 +37,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--basic-color);
-display: flex;
-align-items: center;
+@extend %display;
 }
 
 .tel {
@@ -48,8 +47,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--subtitle-color);
 cursor: pointer;
-display: flex;
-align-items: center;
+@extend %display;
 transition-property: color;
 @extend %animation;
 
@@ -61,8 +59,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--subtitle-color);
 cursor: pointer;
-display: flex;
-align-items: center;
+@extend %display;
 transition-property: color;
 @extend %animation;
 }
@@ -72,8 +69,7 @@ color: var(--basic-color);
 }
 
 .header-box{
-display: flex;
-align-items: center;
+@extend %display;
 }
 .navigation-mark{
 display: flex;
@@ -81,9 +77,8 @@ gap: 50px;
 list-style: none;
 }
 .contacts {
-display: flex;
+@extend %display;
 justify-items: space-between;
-align-items: center;
 gap: 50px;
 margin-left: auto;
 list-style: none;

@@ -28,7 +28,15 @@
     }
         }
     
-    
+    .navigation__logo {
+        margin-right: 93px;
+        }
+        
+    .logo__leters{
+        color: var(--basic-color);
+        }
+        
+            
     .nav--active{
         color: var(--another-color);
     }
@@ -79,10 +87,6 @@
     @extend %animation;
     }
     
-    .logo__leters{
-    color: var(--basic-color);
-    }
-    
     .header__container{
     @extend %display;
     }
@@ -101,6 +105,3 @@
     list-style: none;
     }
     
-    .navigation__logo {
-    margin-right: 93px;
-    }
