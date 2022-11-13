@@ -30,6 +30,12 @@ button:focus {
   margin-bottom: 50px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --basic-color: #212121;
   --sac-basic-color: #ffffff;
@@ -93,15 +99,15 @@ button:focus {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo {
@@ -247,7 +253,6 @@ button:focus {
 }
 
 .features__container {
-  display: flex;
   gap: 30px;
   list-style: none;
 }
@@ -270,10 +275,11 @@ button:focus {
 }
 
 .features__list {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
 }
 
 .features__block {
+  display: block;
   justify-content: center;
   width: 270px;
   height: 120px;
