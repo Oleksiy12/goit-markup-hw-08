@@ -1,5 +1,5 @@
 .link-clients{
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--icons-color);
     border-radius: 5px;
@@ -11,17 +11,19 @@ transition-property: border-color;
 &:focus{
     border-color: var(--another-color);
 }
+@media screen and (min-width: 768px) {
+    width: 226px;
 }
-
-.section-clients{
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+    width: 170px;
+}
 }
 
 .list-client{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
+    gap: 30px;
 }
 
 .icons-clients{

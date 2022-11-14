@@ -29,6 +29,13 @@ button:focus {
   text-align: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1199px) {
+  .second-title {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
 
 img {
   display: block;
@@ -54,7 +61,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-enter, .checkbox, .modal-button, .icons-footer, .footer-first-block, .icons-first-footer, .link-clients, .icons-team, .features__block, .communication, .header__container, .communication__mail, .communication__tel, .navigation, .button-maling {
+.btn-enter, .checkbox, .modal-button, .icons-footer, .icons-first-footer, .link-clients, .icons-team, .features__block, .communication, .header__container, .communication__mail, .communication__tel, .navigation, .button-maling {
   display: flex;
   align-items: center;
 }
@@ -120,11 +127,7 @@ img {
   }
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -294,6 +297,11 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .features {
+    text-align: center;
+  }
+}
 
 .features__paragraph {
   font-weight: 400;
@@ -319,10 +327,22 @@ img {
 
 .features__block {
   justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: var(--back-section-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__block {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__block {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .defunct {
@@ -397,9 +417,19 @@ img {
 .icons-first-team {
   display: flex;
   justify-content: space-around;
-  padding: 16px 32px 30px;
+  padding: 16px 122px 24px;
   flex-basis: calc((100% - 30px) / 4);
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .icons-first-team {
+    padding: 16px 74px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icons-first-team {
+    padding: 16px 32px 30px;
+  }
 }
 
 .icons-team-ic {
@@ -427,12 +457,9 @@ img {
 
 .staff {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   list-style: none;
-}
-
-.title-second {
-  margin-bottom: 50px;
 }
 
 .staff-paragraph {
@@ -462,10 +489,24 @@ img {
   background-color: var(--sac-basic-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 450px;
+  height: 622px;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    width: 270px;
+    height: 428px;
+  }
 }
 
 .link-clients {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icons-color);
   border-radius: 5px;
@@ -475,16 +516,22 @@ img {
 .link-clients:hover, .link-clients:focus {
   border-color: var(--another-color);
 }
-
-.section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 768px) {
+  .link-clients {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-clients {
+    width: 170px;
+  }
 }
 
 .list-client {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
 }
 
 .icons-clients {
@@ -495,8 +542,15 @@ img {
   fill: var(--another-color);
 }
 
+.footer-first-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+
 .foot-list {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .log-foot {
@@ -551,13 +605,10 @@ img {
 
 .footer-second {
   display: block;
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
+  flex-wrap: wrap;
 }
 
 .icons-first-footer {
-  justify-content: space-around;
   gap: 10px;
   list-style: none;
 }
@@ -591,10 +642,10 @@ img {
 }
 
 .maling-list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 570px;
   height: 86px;
-  margin-left: 93px;
 }
 
 .maling-footer {
@@ -619,6 +670,7 @@ img {
 
 .button-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .maling-icons {

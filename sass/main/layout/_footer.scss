@@ -1,5 +1,14 @@
+
+.footer-first-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+
 .foot-list{
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+    margin-bottom: 8px;
     }
     
     .log-foot{
@@ -56,21 +65,20 @@
     
     .footer-second{
         display: block;
-        width: 206px;
-        height: 80px;
-        margin-left: 70px;
-    }
+        flex-wrap: wrap;
+        // width: 206px;
+        // height: 80px;
+    //     margin-left: 70px;
+     }
     
     .icons-first-footer{
         @extend %display;
-        justify-content: space-around;
         gap: 10px;
         list-style: none;
+
     }
     
-    .footer-first-block{
-        @extend %display;
-    }
+    
     
     .icons-footer{
         width: 44px;
@@ -104,10 +112,11 @@
     }
     
     .maling-list{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         width: 570px;
         height: 86px;
-        margin-left: 93px;
+        // margin-left: 93px;
     }
     
     .maling-footer {
@@ -133,6 +142,7 @@
     
     .button-form{
         display: flex;
+        flex-wrap: wrap;
     }
     
     .maling-icons{
