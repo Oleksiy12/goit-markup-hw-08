@@ -1,9 +1,6 @@
 
 .footer-first-block{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
+
 }
 
 .foot-list{
@@ -13,13 +10,12 @@
     
     .log-foot{
     display: inline-block;
+    align-items: center;
     margin-bottom: 20px;
     }
     
     .basement-hero{
     background-color: var(--back-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
     }
     
     .mail-tell-foot{
@@ -53,7 +49,6 @@
     }
     
     .paragrapf-footer{
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -64,17 +59,16 @@
     }
     
     .footer-second{
-        display: block;
-        flex-wrap: wrap;
-        // width: 206px;
-        // height: 80px;
-    //     margin-left: 70px;
+        text-align: center;
+    
      }
     
     .icons-first-footer{
         @extend %display;
+        justify-content: center;
         gap: 10px;
         list-style: none;
+        margin-bottom: 60px;
 
     }
     
@@ -112,16 +106,10 @@
     }
     
     .maling-list{
-        display: flex;
-        flex-wrap: wrap;
-        width: 570px;
-        height: 86px;
-        // margin-left: 93px;
+        text-align: center;
     }
     
     .maling-footer {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -132,23 +120,26 @@
     border-radius: 4px;
     width: 358px;
     height: 50px;
-    margin-right: 12px;
+    // margin-right: 12px;
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
     outline: none;
+    margin-bottom: 20px;
     }
     
     
     .button-form{
-        display: flex;
-        flex-wrap: wrap;
+        
     }
     
     .maling-icons{
         fill: var(--sac-basic-color);
+        margin-left: 12px;
     }
 
     .basement{
         list-style: none;
+        margin-bottom: 60px;
+        text-align: center;
     }

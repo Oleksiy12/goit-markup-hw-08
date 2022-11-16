@@ -62,14 +62,13 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-enter, .checkbox, .modal-button, .icons-footer, .icons-first-footer, .link-clients, .icons-team, .features__block, .communication, .header__container, .communication__mail, .communication__tel, .navigation, .button-maling {
+.btn-enter, .checkbox, .modal-button, .icons-footer, .icons-first-footer, .link-clients, .icons-team, .features__block, .communication, .header__container, .communication__mail, .communication__tel, .navigation {
   display: flex;
   align-items: center;
 }
 
 .hero-button {
   background-color: var(--back-batt-color);
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -91,8 +90,6 @@ img {
   width: 200px;
   height: 50px;
   background-color: var(--another-color);
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -102,8 +99,7 @@ img {
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  padding: 10px 28px;
-  justify-content: space-around;
+  align-items: baseline;
 }
 
 .container {
@@ -312,6 +308,9 @@ img {
   color: var(--subtitle-color);
 }
 
+.features__list {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .features__list {
     width: calc((100% - 30px) / 2);
@@ -327,6 +326,7 @@ img {
   justify-content: center;
   width: 450px;
   height: 120px;
+  border-radius: 4px;
   background-color: var(--back-section-color);
   margin-bottom: 30px;
 }
@@ -540,26 +540,18 @@ img {
   fill: var(--another-color);
 }
 
-.footer-first-block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: center;
-}
-
 .foot-list {
   margin-bottom: 8px;
 }
 
 .log-foot {
   display: inline-block;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .basement-hero {
   background-color: var(--back-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .mail-tell-foot {
@@ -591,7 +583,6 @@ img {
 }
 
 .paragrapf-footer {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -602,13 +593,14 @@ img {
 }
 
 .footer-second {
-  display: block;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .icons-first-footer {
+  justify-content: center;
   gap: 10px;
   list-style: none;
+  margin-bottom: 60px;
 }
 
 .icons-footer {
@@ -640,15 +632,10 @@ img {
 }
 
 .maling-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 570px;
-  height: 86px;
+  text-align: center;
 }
 
 .maling-footer {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -659,24 +646,22 @@ img {
   border-radius: 4px;
   width: 358px;
   height: 50px;
-  margin-right: 12px;
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
   outline: none;
-}
-
-.button-form {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .maling-icons {
   fill: var(--sac-basic-color);
+  margin-left: 12px;
 }
 
 .basement {
   list-style: none;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .backdrop {
