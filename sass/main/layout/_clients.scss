@@ -11,12 +11,12 @@ transition-property: border-color;
 &:focus{
     border-color: var(--another-color);
 }
-@media screen and (min-width: 768px) {
-    width: 226px;
-}
-@media screen and (min-width: 1200px) {
-    width: 170px;
-}
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 
 .list-client{
@@ -24,6 +24,9 @@ transition-property: border-color;
     flex-wrap: wrap;
     list-style: none;
     gap: 30px;
+    @media screen and (max-width: 479px) {
+    justify-content: center;
+    }
 }
 
 .icons-clients{
@@ -37,5 +40,5 @@ transition-property: fill;
 }
 
 .block-clients{
-    width: 100%;
+    
 }
