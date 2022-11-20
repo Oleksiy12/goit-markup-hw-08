@@ -99,6 +99,10 @@ img {
   border-radius: 4px;
   border: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .container {
@@ -244,17 +248,12 @@ img {
 }
 
 .hero-sect {
-  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
   background-color: var(--back-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: var(--sac-basic-color);
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   display: flex;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-bg.jpg);
@@ -262,20 +261,34 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero-sect {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    max-width: 1600px;
+  }
+}
 
 .title-hero {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--sac-basic-color);
   margin-bottom: 30px;
   text-transform: uppercase;
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .title-hero {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .features__container {
@@ -554,14 +567,14 @@ img {
   width: 100%;
 }
 
-.foot-list {
+.foot-list:not(:last-child) {
   margin-bottom: 8px;
 }
 
-.log-foot {
-  display: inline-block;
-  align-items: center;
+.footer-box {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .basement-hero {
@@ -590,6 +603,12 @@ img {
   font-style: normal;
   transition-property: color;
   cursor: pointer;
+}
+
+.basement {
+  list-style: none;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .two-logo-letters {
@@ -633,6 +652,13 @@ img {
   fill: var(--sac-basic-color);
 }
 
+@media screen and (min-width: 768px) {
+  .tablet-block {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .paragrapf-maling {
   font-weight: 700;
   font-size: 14px;
@@ -641,6 +667,7 @@ img {
   text-transform: uppercase;
   color: var(--sac-basic-color);
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .maling-list {
@@ -660,6 +687,7 @@ img {
   height: 50px;
   outline: none;
   margin-bottom: 20px;
+  padding-left: 16px;
 }
 @media screen and (min-width: 480px) {
   .maling-footer {
@@ -673,20 +701,12 @@ img {
 }
 
 .button-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block;
 }
 
 .maling-icons {
   fill: var(--sac-basic-color);
   margin-left: 12px;
-}
-
-.basement {
-  list-style: none;
-  margin-bottom: 60px;
-  text-align: center;
 }
 
 .backdrop {

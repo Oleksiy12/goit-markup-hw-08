@@ -3,15 +3,19 @@
     width:100%;
 }
 
-.foot-list{
+.foot-list:not(:last-child){
     // margin-bottom: 9px;
     margin-bottom: 8px;
     }
     
     .log-foot{
-    display: inline-block;
-    align-items: center;
+    }
+
+    .footer-box{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
     }
     
     .basement-hero{
@@ -43,6 +47,12 @@
     @extend %animation;
     cursor: pointer;
     }
+
+    .basement{
+        list-style: none;
+        margin-bottom: 60px;
+        text-align: center;
+    }
     
     .two-logo-letters{
     color:var(--sac-basic-color);
@@ -59,28 +69,24 @@
     }
     
     .footer-second{
-        text-align: center;
-    
+        text-align: center
      }
     
     .icons-first-footer{
-        @extend %display;
-        justify-content: center;
-        gap: 10px;
-        list-style: none;
-        margin-bottom: 60px;
-
+    @extend %display;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 60px;
     }
-    
-    
-    
+
     .icons-footer{
-        width: 44px;
-        height: 44px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        @extend %display;
-        justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    @extend %display;
+    justify-content: center;
     transition-property: background-color;
     @extend %animation;
     &:hover,
@@ -93,6 +99,13 @@
         fill: var(--sac-basic-color);
     }
     
+    .tablet-block{
+    @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: space-around;
+    }
+    }
+
     .paragrapf-maling{
         font-weight: 700;
         font-size: 14px;
@@ -101,6 +114,7 @@
         text-transform: uppercase;
         color: var(--sac-basic-color);
         margin-bottom: 20px;
+        text-transform: uppercase;
     }
     
     .maling-list{
@@ -120,19 +134,18 @@
     height: 50px;
     outline: none;
     margin-bottom: 20px;
+    padding-left: 16px;
     @media screen and (min-width: 480px) {
         width: 450px;
     }
     @media screen and (min-width: 1200px) {
         width: 358px;
     }
-    }
-    
+}
     
     .button-form{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: block;
+
     }
     
     .maling-icons{
@@ -140,8 +153,4 @@
         margin-left: 12px;
     }
 
-    .basement{
-        list-style: none;
-        margin-bottom: 60px;
-        text-align: center;
-    }
+   
