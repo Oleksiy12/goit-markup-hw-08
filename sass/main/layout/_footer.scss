@@ -1,6 +1,10 @@
 
 .footer-first-block{
-    width:100%;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
 .foot-list:not(:last-child){
@@ -15,6 +19,9 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    @media screen and (min-width:1200px) {
+        justify-content:flex-start;
+    }
     
     }
     
@@ -52,6 +59,10 @@
         list-style: none;
         margin-bottom: 60px;
         text-align: center;
+        @media screen and (min-width:1200px) {
+            text-align: start; 
+            margin-bottom: 0;
+           }
     }
     
     .two-logo-letters{
@@ -69,7 +80,11 @@
     }
     
     .footer-second{
-        text-align: center
+        text-align: center;
+        @media screen and (min-width:1200px) {
+         text-align: start;
+         margin-left: 70px; 
+        }
      }
     
     .icons-first-footer{
@@ -78,6 +93,9 @@
     gap: 10px;
     list-style: none;
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
     }
 
     .icons-footer{
@@ -104,6 +122,10 @@
     display: flex;
     justify-content: space-around;
     }
+    @media screen and (min-width:1200px) {
+    display: flex; 
+    align-items: baseline;
+       }
     }
 
     .paragrapf-maling{
@@ -140,11 +162,17 @@
     }
     @media screen and (min-width: 1200px) {
         width: 358px;
+        margin-bottom: 0;
     }
 }
     
     .button-form{
         display: block;
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        }
 
     }
     

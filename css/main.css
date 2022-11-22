@@ -104,6 +104,11 @@ img {
   justify-content: center;
   margin: 0 auto;
 }
+@media screen and (min-width: 1200px) {
+  .button-maling {
+    margin-left: 12px;
+  }
+}
 
 .container {
   width: 100%;
@@ -563,8 +568,12 @@ img {
   fill: var(--another-color);
 }
 
-.footer-first-block {
-  width: 100%;
+@media screen and (min-width: 1200px) {
+  .footer-first-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .foot-list:not(:last-child) {
@@ -575,6 +584,11 @@ img {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    justify-content: flex-start;
+  }
 }
 
 .basement-hero {
@@ -610,6 +624,12 @@ img {
   margin-bottom: 60px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .basement {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
 
 .two-logo-letters {
   color: var(--sac-basic-color);
@@ -628,12 +648,23 @@ img {
 .footer-second {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-second {
+    text-align: start;
+    margin-left: 70px;
+  }
+}
 
 .icons-first-footer {
   justify-content: center;
   gap: 10px;
   list-style: none;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .icons-first-footer {
+    margin: 0;
+  }
 }
 
 .icons-footer {
@@ -656,6 +687,12 @@ img {
   .tablet-block {
     display: flex;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tablet-block {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -697,11 +734,19 @@ img {
 @media screen and (min-width: 1200px) {
   .maling-footer {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
 .button-form {
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .button-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
 }
 
 .maling-icons {
